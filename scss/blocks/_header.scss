@@ -42,6 +42,11 @@
             &:hover {
                 background-color: #172330;
             }
+
+            @media (max-width: 352px) {
+                font-size: 14px;
+                padding: 7px 22px;
+            }
         }
 
         &--sign {
@@ -51,6 +56,10 @@
 
             &:hover {
                 background-color: #158578;
+            }
+
+            @media (max-width: 1016px) {
+                display: none;
             }
         }
     }
@@ -67,6 +76,14 @@
         margin-left: 40px;
 
         display: none;
+
+        @media (max-width: 860px) {
+            display: flex;
+        }
+
+        @media (max-width: 352px) {
+            margin-left: 20px;
+        }
 
         span {
             width: 100%;
@@ -120,6 +137,41 @@
     gap: 42px;
     margin-right: 74px;
 
+    @media (max-width: 1050px) {
+        margin-right: 33px;
+    }
+
+    @media (max-width: 906px) {
+        gap: 30px;
+    }
+
+    @media (max-width: 856px) {
+        margin-right: 50px;
+    }
+
+    @media (max-width: 860px) {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 80%;
+
+        position: fixed;
+        top: 0;
+        left: -80%;
+        bottom: 0;
+        right: 0;
+        z-index: 4;
+
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: $accentColor;
+        row-gap: 90px;
+    }
+    &.open {
+        left: 0;
+        transition: all 0.3s;
+    }
+
     &__item {
         font-size: 16px;
         font-weight: 500;
@@ -139,6 +191,13 @@
                 width: 100%;
                 height: 3px;
                 background-color: $accentColor;
+            }
+        }
+        @media (max-width: 860px) {
+            font-size: 25px;
+
+            &::before {
+                display: none;
             }
         }
     }

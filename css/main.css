@@ -46,6 +46,12 @@
 .header__button--login:hover {
   background-color: #172330;
 }
+@media (max-width: 352px) {
+  .header__button--login {
+    font-size: 14px;
+    padding: 7px 22px;
+  }
+}
 .header__button--sign {
   padding: 11px 20px;
   background-color: #1aa090;
@@ -54,6 +60,11 @@
 }
 .header__button--sign:hover {
   background-color: #158578;
+}
+@media (max-width: 1016px) {
+  .header__button--sign {
+    display: none;
+  }
 }
 .header__burger {
   position: relative;
@@ -69,6 +80,18 @@
   cursor: pointer;
   margin-left: 40px;
   display: none;
+}
+@media (max-width: 860px) {
+  .header__burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (max-width: 352px) {
+  .header__burger {
+    margin-left: 20px;
+  }
 }
 .header__burger span {
   width: 100%;
@@ -123,6 +146,49 @@
   gap: 42px;
   margin-right: 74px;
 }
+@media (max-width: 1050px) {
+  .menu {
+    margin-right: 33px;
+  }
+}
+@media (max-width: 906px) {
+  .menu {
+    gap: 30px;
+  }
+}
+@media (max-width: 856px) {
+  .menu {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 860px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    left: -80%;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+    overflow-y: auto;
+    padding: 50px 40px;
+    background-color: #1aa090;
+    row-gap: 90px;
+  }
+}
+.menu.open {
+  left: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
 .menu__item {
   font-size: 16px;
   font-weight: 500;
@@ -142,6 +208,14 @@
   width: 100%;
   height: 3px;
   background-color: #1aa090;
+}
+@media (max-width: 860px) {
+  .menu__item {
+    font-size: 25px;
+  }
+  .menu__item::before {
+    display: none;
+  }
 }
 
 .main {
