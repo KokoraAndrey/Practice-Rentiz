@@ -1,0 +1,87 @@
+@import '../component/variable';
+
+.header {
+    background-color: $bgColor;
+
+    &__wrapper {
+        margin: 40px 0 95px 0;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 132px;
+        height: 47px;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    &__button {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        color: $white;
+
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        &--login {
+            padding: 10px 29px;
+            color: $textColor;
+
+            border: 1px solid $accentColor;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #172330;
+            }
+        }
+
+        &--sign {
+            padding: 11px 20px;
+            background-color: $accentColor;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #158578;
+            }
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    margin-right: 74px;
+
+    &__item {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+
+        position: relative;
+        transition: all 0.4s;
+
+        &:hover {
+            color: $white;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -4px;
+                width: 100%;
+                height: 3px;
+                background-color: $accentColor;
+            }
+        }
+    }
+}
