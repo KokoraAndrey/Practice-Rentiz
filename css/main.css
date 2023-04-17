@@ -55,6 +55,63 @@
 .header__button--sign:hover {
   background-color: #158578;
 }
+.header__burger {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 50;
+  width: 30px;
+  height: 18px;
+  cursor: pointer;
+  margin-left: 40px;
+  display: none;
+}
+.header__burger span {
+  width: 100%;
+  height: 2px;
+  background-color: #1aa090;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.header__burger::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #1aa090;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.header__burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #1aa090;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.header__burger.active span {
+  display: none;
+}
+.header__burger.active::before {
+  top: calc(50% - 1px);
+  -webkit-transform: rotate(-45deg) translate(0, -50%);
+          transform: rotate(-45deg) translate(0, -50%);
+}
+.header__burger.active::after {
+  bottom: 50%;
+  -webkit-transform: rotate(45deg) translate(0, 50%);
+          transform: rotate(45deg) translate(0, 50%);
+}
 
 .menu {
   display: -webkit-box;
