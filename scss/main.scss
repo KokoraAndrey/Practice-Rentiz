@@ -1,7 +1,10 @@
+// Components
+@import './component/variable';
+@import './component/extends';
+@import './component/mixins';
+@import './component/global';
+
 // Blocks
 @import './blocks/header';
 @import './blocks/footer';
-
-// Components
-@import './component/variable';
-@import './component/global';
+@import './blocks/perfect';

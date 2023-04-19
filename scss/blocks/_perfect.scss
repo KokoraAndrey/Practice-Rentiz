@@ -1,0 +1,31 @@
+.perfect {
+    background-color: $bgColor;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        max-width: 700px;
+        padding-top: 119px;
+    }
+
+    &__title {
+        @extend %title-l;
+        margin-bottom: 18px;
+    }
+
+    &__image {
+        background: url('../../images/perfect/perfect.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        max-width: 700px;
+        height: 645px;
+    }
+
+    .filter-1 {
+        width: 400px;
+        height: 50px;
+    }
+}
