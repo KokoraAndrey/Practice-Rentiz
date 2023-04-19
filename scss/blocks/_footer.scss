@@ -4,10 +4,30 @@
     &__wrapper {
         display: flex;
         padding: 139px 0 94px 0;
+
+        @media (max-width: 890px) {
+            flex-direction: column-reverse;
+            padding: 70px 0 50px 0;
+        }
+
+        @media (max-width: 346px) {
+            padding: 40px 0 20px 0;
+        }
     }
 
     &__content {
         margin-right: 140px;
+
+        @media (max-width: 1045px) {
+            margin-right: 100px;
+        }
+
+        @media (max-width: 1045px) {
+            margin-right: 50px;
+        }
+        @media (max-width: 346px) {
+            margin: 0;
+        }
     }
 
     &__logo {
@@ -17,6 +37,10 @@
     &__text {
         max-width: 340px;
         margin-bottom: 31px;
+
+        @media (max-width: 890px) {
+            font-size: 15px;
+        }
     }
 
     &__socials {
@@ -24,16 +48,50 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width: 346px) {
+            margin: 0 auto;
+        }
     }
 
     &__navigation {
         display: flex;
-        gap: 120px;
+        width: 100%;
+        max-width: 840px;
+        justify-content: space-between;
+
+        @media (max-width: 890px) {
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 445px) {
+            justify-content: start;
+            column-gap: 80px;
+            row-gap: 20px;
+        }
     }
 
     &__list {
         display: flex;
         flex-direction: column;
+
+        &:not(:last-child) {
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 445px) {
+            &:not(:last-child) {
+                margin-right: 50px;
+            }
+        }
+
+        @media (max-width: 416px) {
+            &:not(:last-child) {
+                margin-right: 150px;
+            }
+        }
     }
 
     &__title {
@@ -42,6 +100,10 @@
         line-height: 32.76px;
         margin-bottom: 11px;
         color: $white;
+
+        @media (max-width: 890px) {
+            font-size: 20px;
+        }
     }
 
     &__item {
@@ -51,6 +113,10 @@
 
         &:hover {
             color: $white;
+        }
+
+        @media (max-width: 890px) {
+            font-size: 15px;
         }
     }
 
