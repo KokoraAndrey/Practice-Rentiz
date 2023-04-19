@@ -14,10 +14,6 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.header__logo {
-  width: 132px;
-  height: 47px;
-}
 .header__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,10 +214,71 @@
   }
 }
 
-.main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.footer {
+  background-color: #1a242f;
+}
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 139px 0 94px 0;
+}
+.footer__content {
+  margin-right: 140px;
+}
+.footer__logo {
+  margin-bottom: 22px;
+}
+.footer__text {
+  max-width: 340px;
+  margin-bottom: 31px;
+}
+.footer__socials {
+  max-width: 173px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 120px;
+}
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer__title {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 32.76px;
+  margin-bottom: 11px;
+  color: #fff;
+}
+.footer__item:not(:last-child) {
+  margin-bottom: 7px;
+}
+.footer__item:hover {
+  color: #fff;
+}
+.footer__link {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.footer__link:hover svg path {
+  fill: #fff;
 }
 
 *,
@@ -233,19 +290,17 @@
           box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: "Work Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 170%;
   color: #d6d6d6;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 a {
@@ -257,9 +312,31 @@ button {
   display: inline-block;
 }
 
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .container {
   width: 100%;
   max-width: 1450px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.logo {
+  width: 132px;
+  height: 47px;
 }/*# sourceMappingURL=main.css.map */
