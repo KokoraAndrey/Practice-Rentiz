@@ -3,10 +3,29 @@
     font-size: 68px;
     line-height: 126%;
     text-transform: capitalize;
+    color: $white;
 }
 
 %title-m {
     font-weight: 600;
     font-size: 68px;
     line-height: 126%;
+}
+
+%button {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: $white;
+    border: none;
+    background-color: $accentColor;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: $hover-accent-btn;
+    }
 }

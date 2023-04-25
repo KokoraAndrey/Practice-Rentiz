@@ -1,0 +1,5 @@
+
+@mixin button($p1, $p2) {
+    @extend %button;
+    padding: $p1 $p2;
+}

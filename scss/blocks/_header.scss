@@ -6,6 +6,10 @@
     &__wrapper {
         margin: 40px 0 95px 0;
 
+        @media (max-width: 992px) {
+            margin-bottom: 40px;
+        }
+
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -161,7 +165,7 @@
         padding: 50px 100px;
         background-color: $accentColor;
         row-gap: 90px;
-        align-items: start;
+        align-items: center;
     }
     &.open {
         left: 0;

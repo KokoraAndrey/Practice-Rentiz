@@ -1,31 +1,232 @@
 .perfect {
     background-color: $bgColor;
+    
     &__wrapper {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
     }
 
     &__content {
-        max-width: 700px;
+        flex: 0 0 calc(700px / 1420px * 100%);
         padding-top: 119px;
+
+        @media (max-width: 1337px) {
+            padding-top: 115px;
+        }
+
+        @media (max-width: 1217px) {
+            padding-top: 107px;
+        }
+
+        @media (max-width: 1211px) {
+            padding-top: 100px;
+        }
+
+        @media (max-width: 992px) {
+            padding-top: 50px;
+        }
+
+        @media (max-width: 575px) {
+            padding-top: 20px;
+        }
     }
 
     &__title {
         @extend %title-l;
         margin-bottom: 18px;
+
+        @media (max-width: 1337px) {
+            font-size: 60px;
+        }
+
+        @media (max-width: 1217px) {
+            font-size: 50px;
+        }
+        @media (max-width: 1016px) {
+            font-size: 45px;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 35px;
+        }
     }
 
-    &__image {
-        background: url('../../images/perfect/perfect.png');
-        background-repeat: no-repeat;
-        background-size: cover;
+    &__img {
+        flex: 0 0 calc(700px / 1420px * 100%);
+        margin-left: 5px;
+
+        @media (min-width: 768px) and (max-width: 992px) {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            margin-left: 0;
+        }
+    }
+
+    &__description {
+        margin-bottom: 60px;
+
+        @media (max-width: 1217px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__decoration {
+        position: absolute;
+        z-index: -1;
+        bottom: -240px;
+        right: 0;
+    }
+}
+
+.filter {
+    position: absolute;
+    width: 880px;
+    height: 100px;
+    margin-bottom: 118px;
+    background-color: $white;
+    color: $filter-select;
+    font-weight: 600;
+    line-height: 1.2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 164px;
+
+    @media (max-width: 992px) {
+        position: static;
         width: 100%;
-        max-width: 700px;
-        height: 645px;
     }
 
-    .filter-1 {
-        width: 400px;
-        height: 50px;
+    @media (max-width: 768px) {
+        margin-bottom: 50px;
+    }
+
+    @media (max-width: 576px) {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 5px;
+        height: auto;
+    }
+    @media (max-width: 475px) {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    &__block {
+        &:nth-child(2) {
+            border-right: 1px solid $filter-separate;
+            border-left: 1px solid $filter-separate;
+        }
+    }
+
+    &__button {
+        @extend %button;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 576px) and (min-width: 475px) {
+            grid-column: 1/4;
+            padding: 10px;
+        }
+    }
+}
+.block-filter {
+    position: relative;
+
+    &__button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding-left: 40px;
+
+        @media (max-width: 871px) {
+            padding-left: 30px;
+        }
+
+        @media (max-width: 813px) {
+            padding-left: 15px;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+
+    &__type {
+        padding-right: 2px;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        color: $filter-title;
+
+        margin-bottom: 2px;
+    }
+
+    &__icon {
+        width: 9px;
+        height: 7px;
+        background: url(./../../icons/perfect/arrow--down.svg) center center
+            no-repeat;
+
+        transition: transform 0.2s;
+        &.active {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__dropdown {
+        position: absolute;
+        top: 105%;
+        left: 0;
+        right: 0;
+        z-index: 4;
+
+        background-color: $white;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        box-shadow: $filter-select-shadow;
+
+        transition: all 0.2s;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+            transform: translateY(5px);
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            border-bottom: 1px solid $filter-separate;
+        }
+        padding: 10px 10px 10px 40px;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: $filter-separate;
+        }
+
+        @media (max-width: 871px) {
+            padding-left: 30px;
+        }
+
+        @media (max-width: 813px) {
+            padding-left: 15px;
+        }
     }
 }
