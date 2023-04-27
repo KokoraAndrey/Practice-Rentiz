@@ -1,6 +1,6 @@
 .perfect {
     background-color: $bgColor;
-    
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -76,7 +76,7 @@
         }
 
         @media (max-width: 768px) {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
     }
 
@@ -107,7 +107,7 @@
     }
 
     @media (max-width: 768px) {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
 
     @media (max-width: 576px) {

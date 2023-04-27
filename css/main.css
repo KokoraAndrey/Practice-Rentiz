@@ -7,6 +7,13 @@
   color: #fff;
 }
 
+.features__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 126%;
+  color: #fff;
+}
+
 .filter__button {
   font-family: "Work Sans";
   font-style: normal;
@@ -279,7 +286,7 @@ button {
     right: 0;
     z-index: 4;
     overflow-y: auto;
-    padding: 50px 100px;
+    padding: 50px 50px;
     background-color: #1aa090;
     row-gap: 90px;
     -webkit-box-align: center;
@@ -572,7 +579,7 @@ button {
 }
 @media (max-width: 768px) {
   .perfect__description {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 .perfect__decoration {
@@ -602,7 +609,7 @@ button {
 }
 @media (max-width: 768px) {
   .filter {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 576px) {
@@ -740,4 +747,73 @@ button {
   .block-filter__item {
     padding-left: 15px;
   }
+}
+
+.features {
+  background-color: #121b25;
+}
+.features__title {
+  margin: 180px 0 52px 0;
+}
+@media (max-width: 998px) {
+  .features__title {
+    font-size: 45px;
+    margin: 30px 0 30px 0;
+  }
+}
+@media (max-width: 992px) {
+  .features__title {
+    font-size: 45px;
+    margin: 0px 0 30px 0;
+  }
+}
+@media (max-width: 767px) {
+  .features__title {
+    font-size: 45px;
+    margin: 50px 0 20px 0;
+  }
+}
+@media (max-width: 575px) {
+  .features__title {
+    font-size: 35px;
+  }
+}
+.features__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 180px;
+}
+@media (max-width: 998px) {
+  .features__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 15px;
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 600px) {
+  .features__list {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 438px) {
+  .features__list {
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+  }
+}
+.features__item {
+  justify-self: center;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=main.css.map */
