@@ -1,0 +1,128 @@
+.popular {
+    background-color: $bgFooter;
+
+    &__title {
+        @extend %title-m;
+        margin: 160px 0 40px 0;
+
+        @media (max-width: 1043px) {
+            margin-top: 120px;
+        }
+        @media (max-width: 662px) {
+            margin-top: 50px;
+        }
+    }
+
+    &__slider {
+        margin-bottom: 68px;
+    }
+
+    &__slide {
+        max-width: 460px;
+    }
+
+    &__item {
+        max-width: 460px;
+    }
+
+    &__image {
+        width: 100%;
+        max-width: 460px;
+        margin-bottom: 22px;
+
+        @media (max-width: 490px) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__arrow {
+        width: 45px;
+        &--right {
+            transform: rotate(180deg);
+        }
+
+        @media (max-width: 490px) {
+            width: 15px;
+        }
+    }
+
+    &__button {
+        @include button(22px, 42px);
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 161px;
+    }
+}
+
+.exposition {
+    &__title {
+        @extend %title-slide;
+        margin-bottom: 3px;
+
+        @media (max-width: 820px) {
+            font-size: 23px;
+        }
+
+        @media (max-width: 490px) {
+            font-size: 20px;
+        }
+    }
+
+    &__description {
+        font-weight: 400;
+        line-height: 170%;
+        margin-bottom: 18px;
+
+        @media (max-width: 820px) {
+            font-size: 15px;
+        }
+
+        @media (max-width: 490px) {
+            font-size: 12px;
+        }
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    &__text {
+        @media (max-width: 820px) {
+            font-size: 15px;
+        }
+
+        @media (max-width: 490px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.swiper {
+    &-button {
+        &-prev {
+            &:after {
+                display: none;
+            }
+        }
+
+        &-next {
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+.container {
+    margin: 0;
+}

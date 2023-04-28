@@ -31,3 +31,23 @@ function getBurger() {
     menu.classList.toggle('open');
     document.querySelector('body').classList.toggle('lock');
 }
+
+const swiper = new Swiper('.popular__slider', {
+    navigation: {
+        nextEl: '.swiper-button-next1',
+        prevEl: '.swiper-button-prev1', // Включить стрелочки
+    },
+    slidesPerView: 1,
+    autoHeight: true,
+    grabCursor: true,
+    // freeMode: true,
+    spaceBetween: 20,
+    breakpoints: {
+        1043: {
+            slidesPerView: 3,
+        },
+        626: {
+            slidesPerView: 2,
+        },
+    },
+});
