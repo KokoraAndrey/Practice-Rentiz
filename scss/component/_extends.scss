@@ -20,6 +20,17 @@
     color: $white;
 }
 
+%title-choose {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 126%;
+
+    text-transform: capitalize;
+    color: $white;
+}
+
 %button {
     font-family: 'Work Sans';
     font-style: normal;

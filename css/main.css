@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap");
-.perfect__title {
+.choose-us__title, .perfect__title {
   font-weight: 600;
   font-size: 68px;
   line-height: 126%;
@@ -18,6 +18,16 @@
   font-weight: 600;
   font-size: 26px;
   line-height: 126%;
+  color: #fff;
+}
+
+.props__title {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 126%;
+  text-transform: capitalize;
   color: #fff;
 }
 
@@ -557,7 +567,7 @@ button {
 }
 @media (max-width: 575px) {
   .perfect__title {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 .perfect__img {
@@ -770,19 +780,17 @@ button {
 }
 @media (max-width: 992px) {
   .features__title {
-    font-size: 45px;
     margin: 0px 0 30px 0;
   }
 }
 @media (max-width: 767px) {
   .features__title {
-    font-size: 45px;
     margin: 50px 0 20px 0;
   }
 }
 @media (max-width: 575px) {
   .features__title {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 .features__list {
@@ -834,15 +842,22 @@ button {
 @media (max-width: 1043px) {
   .popular__title {
     margin-top: 120px;
+    font-size: 40px;
   }
 }
 @media (max-width: 662px) {
   .popular__title {
     margin-top: 50px;
+    font-size: 30px;
   }
 }
 .popular__slider {
   margin-bottom: 68px;
+}
+@media (max-width: 490px) {
+  .popular__slider {
+    margin-bottom: 30px;
+  }
 }
 .popular__slide {
   max-width: 460px;
@@ -877,6 +892,18 @@ button {
   display: block;
   margin: 0 auto;
   margin-bottom: 161px;
+}
+@media (max-width: 700px) {
+  .popular__button {
+    padding: 19px 38px;
+  }
+}
+@media (max-width: 490px) {
+  .popular__button {
+    font-size: 20px;
+    padding: 15px 33px;
+    margin-bottom: 50px;
+  }
 }
 
 .exposition__title {
@@ -942,6 +969,112 @@ button {
   display: none;
 }
 
-.container {
-  margin: 0;
+.choose-us {
+  background-color: #121b25;
+}
+.choose-us__wrapper {
+  padding: 180px 0 180px 0;
+}
+.choose-us__title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.props {
+  max-width: 1338px;
+  margin: 0 auto 189px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.props__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 378px;
+}
+.props__image {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 36px;
+  background-color: rgba(26, 160, 144, 0.12);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.props__icon {
+  width: 72px;
+}
+.props__title {
+  margin-bottom: 11px;
+}
+.props__description {
+  line-height: 170%;
+  text-align: center;
+  color: #d6d6d6;
+}
+
+.testimonials {
+  position: relative;
+  max-width: 1003px;
+  margin: 0 auto;
+}
+.testimonials__image {
+  margin-bottom: 10px;
+}
+.testimonials__text {
+  font-size: 32px;
+  color: #fff;
+  line-height: 157%;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+.testimonials__person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.testimonials__name {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 126%;
+  color: #fff;
+  text-transform: capitalize;
+}
+.testimonials__button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.testimonials__button--prev {
+  margin-right: 70px;
+}
+.testimonials__button--next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  padding-top: 2px;
 }/*# sourceMappingURL=main.css.map */

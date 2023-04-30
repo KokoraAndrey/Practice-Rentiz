@@ -51,3 +51,15 @@ const swiper = new Swiper('.popular__slider', {
         },
     },
 });
+
+const swiper2 = new Swiper('.testimonials__slider', {
+    navigation: {
+        nextEl: '.swiper-button-next2',
+        prevEl: '.swiper-button-prev2', // Включить стрелочки
+    },
+    slidesPerView: 1,
+    autoHeight: true,
+    grabCursor: true,
+    // freeMode: true,
+    spaceBetween: 20,
+});

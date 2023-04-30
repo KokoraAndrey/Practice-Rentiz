@@ -1,0 +1,109 @@
+.choose-us {
+    background-color: $bgColor;
+
+    &__wrapper {
+        padding: 180px 0 180px 0;
+    }
+
+    &__title {
+        @extend %title-l;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+}
+
+.props {
+    max-width: 1338px;
+    margin: 0 auto 189px;
+    display: flex;
+    justify-content: space-between;
+    &__item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 378px;
+    }
+
+    &__image {
+        width: 180px;
+        height: 180px;
+        margin: 0 auto 36px;
+        background-color: $circle;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        width: 72px;
+    }
+
+    &__title {
+        @extend %title-choose;
+        margin-bottom: 11px;
+    }
+
+    &__description {
+        line-height: 170%;
+        text-align: center;
+        color: $textColor;
+    }
+}
+
+.testimonials {
+    position: relative;
+    max-width: 1003px;
+    margin: 0 auto;
+    &__image {
+        margin-bottom: 10px;
+    }
+
+    &__slider {
+    }
+
+    &__slide {
+    }
+
+    &__item {
+    }
+
+    &__text {
+        font-size: 32px;
+        color: $white;
+        line-height: 157%;
+        margin-bottom: 40px;
+        text-transform: capitalize;
+    }
+
+    &__person {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 126%;
+        color: $white;
+        text-transform: capitalize;
+    }
+
+    &__button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+        background: none;
+        border: none;
+
+        &--prev {
+            margin-right: 70px;
+        }
+        &--next {
+            transform: rotate(180deg);
+            padding-top: 2px;
+        }
+    }
+}

@@ -7,14 +7,20 @@
 
         @media (max-width: 1043px) {
             margin-top: 120px;
+            font-size: 40px;
         }
         @media (max-width: 662px) {
             margin-top: 50px;
+            font-size: 30px;
         }
     }
 
     &__slider {
         margin-bottom: 68px;
+
+        @media (max-width: 490px) {
+            margin-bottom: 30px;
+        }
     }
 
     &__slide {
@@ -51,6 +57,16 @@
         display: block;
         margin: 0 auto;
         margin-bottom: 161px;
+
+        @media (max-width: 700px) {
+            padding: 19px 38px;
+        }
+
+        @media (max-width: 490px) {
+            font-size: 20px;
+            padding: 15px 33px;
+            margin-bottom: 50px;
+        }
     }
 }
 
@@ -121,8 +137,4 @@
             }
         }
     }
-}
-
-.container {
-    margin: 0;
 }
