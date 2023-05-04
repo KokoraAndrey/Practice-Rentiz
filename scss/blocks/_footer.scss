@@ -67,7 +67,7 @@
 
         @media (max-width: 445px) {
             justify-content: start;
-            column-gap: 80px;
+            column-gap: 9px;
             row-gap: 20px;
         }
     }
@@ -87,9 +87,9 @@
             }
         }
 
-        @media (max-width: 416px) {
-            &:not(:last-child) {
-                margin-right: 150px;
+        @media (max-width: 346px) {
+            &:nth-child(2) {
+                margin-right: 20px;
             }
         }
     }
